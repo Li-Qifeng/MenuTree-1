@@ -6,16 +6,13 @@
     height: 48px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0 20px 70px 8px rgba(0, 0, 0, 0.25);
+    z-index:1000;
 }
-
-.backdrop-blur {
-    z-index: 9;
-  }
 
 .in-page-editor-buttons,.in-page-preview-buttons {
     margin-top:100px;
     position:fixed;
-    z-index:1050;
+    z-index:1000;
 }
 
 .in-page-button {
@@ -37,6 +34,7 @@
 .icon-list:before{
     display: inline-block;
     text-decoration: inherit;
+    z-index:1000;
 }
 .icon-list {
 }
@@ -65,7 +63,7 @@
     position:absolute;
     padding:5px 0 20px;
     top:100%;
-    z-index:1050;
+    z-index:1000;
     box-shadow: 0 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0 20px 70px 8px rgba(0, 0, 0, 0.25);
 }
 #toc-list .toc ul {
@@ -94,10 +92,12 @@
 }
 .dropdown-menu {
     display: none;
+    z-index:1000;
 }
 .dropdown-menu.pull-right {
     left: auto;
     right: 0;
+    z-index:1000;
 }
 .theme-white {
     background-color: #f9f9f5;
@@ -106,6 +106,7 @@
     transform: none !important;
     top: auto !important;
     left: auto !important;
+    z-index:1000;
 }
 .pull-right {
     float: right;
@@ -116,12 +117,15 @@
     width:330px;
     max-height:400px;
     padding:5px 0;
+    z-index:1000;
 }
 .toc ul {
     list-style-type:none;
+    z-index:1000;
 }
 .open > .dropdown-menu {
     display: block;
+    z-index:1000;
 }
 
 @media (max-width: 550px) {
